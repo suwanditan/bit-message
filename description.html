@@ -885,17 +885,16 @@
 </p>
 <p><strong>Input data: </strong>A hexadecimal string that is bit message.</p>
 <p><strong>Output data: </strong>The output will be a list contains timestamp, length of message and the message itself.</p>
+<div class="for_info_only">
 <p><strong>Example:</strong></p>
 
-<pre class="brush: python">assert( checkio( '002080629173140807EDF27C1E3E9701' ) ==
-['26 Aug 2002 19:37:41 GMT +20', 7, 'message'] ), "First Test"
+<pre class="brush: python">checkio('002080629173140807EDF27C1E3E9701') ==
+    ['26 Aug 2002 19:37:41 GMT +20', 7, 'message']
 
-assert( checkio('00317050201171820ED3323BDC0ED341C4303DEC3E8700') == 
-['05 Jul 2013 02:11:17 GMT +7', 15, 'Selamat Datang!'] ), "Second Test, 7 bit"
+checkio('00317050201171820ED3323BDC0ED341C4303DEC3E8700') ==
+    ['05 Jul 2013 02:11:17 GMT +7', 15, 'Selamat Datang!']
     
-assert( checkio('000130925161956915C8729E054A82C26D50DA0D7296EFA0EC5BBE06') == 
-['29 Mar 2010 15:16:59 GMT -4', 21, 'Hey, I am in New York'] ), "Third Test, negative timezone"
-
- 
-
+checkio('000130925161956915C8729E054A82C26D50DA0D7296EFA0EC5BBE06') ==
+    ['29 Mar 2010 15:16:59 GMT -4', 21, 'Hey, I am in New York']
 </pre>
+</div>
