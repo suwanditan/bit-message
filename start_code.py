@@ -12,7 +12,7 @@ if __name__ == '__main__':
     assert(checkio( '002080629173140807EDF27C1E3E9701') ==
         ['26 Aug 2002 19:37:41 GMT +20', 7, u'message']), "First Test"
 
-    assert(checkio('00317050201171820FD7327BFC6E9743') ==
+    assert(checkio('00317050201171820FD3323BDC0ED341C4303DEC3E8700') ==
         ['05 Jul 2013 02:11:17 GMT +7', 15, u'Selamat Datang!']), "Second Test, 7 bit"
 
     assert(checkio('000130925161956915C8729E054A82C26D50DA0D7296EFA0EC5BBE06') ==
