@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# -*- encoding: utf-8 -*-
 
 def checkio(data):
 
@@ -10,14 +9,13 @@ def checkio(data):
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     assert(checkio( '002080629173140807EDF27C1E3E9701') ==
-        ['26 Aug 2002 19:37:41 GMT +20', 7, u'message']), "First Test"
+        ['26 Aug 2002 19:37:41 GMT +20', 7, 'message']), "First Test"
 
     assert(checkio('00317050201171820FD3323BDC0ED341C4303DEC3E8700') ==
-        ['05 Jul 2013 02:11:17 GMT +7', 15, u'Selamat Datang!']), "Second Test, 7 bit"
+        ['05 Jul 2013 02:11:17 GMT +7', 15, 'Selamat Datang!']), "Second Test, 7 bit"
 
     assert(checkio('000130925161956915C8729E054A82C26D50DA0D7296EFA0EC5BBE06') ==
-        ['2010-03-29 15:16:59 GMT -4', 21, u'Hey, I am in New York']), "Third Test, negative timezone"
-        
+        ['29 Mar 2010 15:16:59 GMT -4', 21, 'Hey, I am in New York']), "Third Test, negative timezone"
    
     assert(checkio('04071010101010611F04180441043A043B044E04470435043D043804350020043F043E04340442043204350440043604340430043504420020043F0440043004320438043B043E') ==
         ['01 Jan 1970 01:01:01 GMT +4', 31, 'Исключение подтверждает правило']), "Fourth Test, simulate 32-bit signed integer real life problem"
