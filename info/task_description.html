@@ -1,16 +1,16 @@
-<p><strong>Bit Message</strong> is a message that hidden within lines of octet
-    stream and represented as hexadecimal string that have length
-    maximum 149 octets. For 9 octets of the message is a
-    <strong>header</strong> message and the rest, is its
-    <strong>content</strong>. Header message contains 1 octet of
-    type, 7 octets of timestamp, and 1 octet of message length.
-    Content message contains maximum 140 octets, and could be
-    packed with 7 bit, 8 bit or 16 bit. 7 bit packed message
-    has length of 160 characters, 8 bit packed message has
-    length of 140 characters, and 16 bit packed message will
-    only has length of 70 characters.
+<p>The <strong>Bit Message</strong> is a message that is hidden within the lines of an octet
+    stream and it is represented as a hexadecimal string which has maximum length
+    of 149 octets. The first 9 octets of the message contain the
+    <strong>header</strong> for the message and the rest comprise the
+    <strong>content</strong>. The header contains 1 type octet,
+    7 timestamp octets, and 1 message length octet.
+    The content contains a maximum of 140 octets and could be
+    packed with either 7 bit, 8 bit or 16 bit. 7 bit packed messages
+    have a length of 160 characters, 8 bit packed messages have
+    a length of 140 characters, and 16 bit packed messages will
+    only have a length of 70 characters.
 </p>
-<p>Here is detail structure of bit message:</p>
+<p>Here are some details on the structure of a bit message:</p>
 
 <p>
 <table cellspacing="0" cols="11" border="0">
@@ -858,8 +858,8 @@
 </p>
 
 
-<p><strong>Input data: </strong>A hexadecimal string that is bit message (unicode).</p>
-<p><strong>Output data: </strong>The output will be a list contains timestamp, length of message and the message itself. The message is unicode.</p>
+<p><strong>Input data: </strong>A hexadecimal string that is a bit message (unicode).</p>
+<p><strong>Output data: </strong>A list containing the timestamp, length of message and the message itself. The message is unicode.</p>
 <div class="for_info_only">
 <p><strong>Example:</strong></p>
 
